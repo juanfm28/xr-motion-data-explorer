@@ -7,15 +7,15 @@ namespace XrMotionDataExplorer.Data
     public class MotionDataLoader : MonoBehaviour
     {
         [SerializeField] private TextAsset motionDataCsv;
-        public IReadOnlyList<SpatialSample> dataset;
+        public IReadOnlyList<SpatialSample> Dataset { get; private set; }
 
-        private void Start()
+        private void Awake()
         {
             if (motionDataCsv == null)
                 throw new NullReferenceException("motionDataCsv is null");
             try
             {
-                dataset = DataParser.ParseMotionData(motionDataCsv.text);
+                Dataset = DataParser.ParseMotionData(motionDataCsv.text);
             }
             catch (Exception e)
             {
