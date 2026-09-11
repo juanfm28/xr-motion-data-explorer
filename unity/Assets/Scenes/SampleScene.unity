@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 94282967}
   - component: {fileID: 94282966}
   - component: {fileID: 94282965}
-  - component: {fileID: 94282964}
+  - component: {fileID: 94282969}
   m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Untagged
@@ -139,21 +139,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &94282964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 94282963}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3e5e21ffaee0e444a1f0cbcb660e5e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: XrMotionDataExplorer::XrMotionDataExplorer.Visualization.TrackedObjectVisualizer
-  dataLoader: {fileID: 1001933940}
-  playbackController: {fileID: 1001933942}
-  objectId: mercury
 --- !u!135 &94282965
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -247,6 +232,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &94282969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94282963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 458e8b505fb87444fa247a6c7379076f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: XrMotionDataExplorer::XrMotionDataExplorer.Controllers.TrackedObjectController
+  dataLoader: {fileID: 1001933940}
+  playbackController: {fileID: 1001933942}
+  objectId: mercury
 --- !u!1 &302335005
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,7 +259,7 @@ GameObject:
   - component: {fileID: 302335009}
   - component: {fileID: 302335008}
   - component: {fileID: 302335007}
-  - component: {fileID: 302335006}
+  - component: {fileID: 302335011}
   m_Layer: 0
   m_Name: Sphere (3)
   m_TagString: Untagged
@@ -267,21 +267,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &302335006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 302335005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3e5e21ffaee0e444a1f0cbcb660e5e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: XrMotionDataExplorer::XrMotionDataExplorer.Visualization.TrackedObjectVisualizer
-  dataLoader: {fileID: 1001933940}
-  playbackController: {fileID: 1001933942}
-  objectId: earth
 --- !u!135 &302335007
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -375,6 +360,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &302335011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302335005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 458e8b505fb87444fa247a6c7379076f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: XrMotionDataExplorer::XrMotionDataExplorer.Controllers.TrackedObjectController
+  dataLoader: {fileID: 1001933940}
+  playbackController: {fileID: 1001933942}
+  objectId: earth
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,7 +718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fc5ca7afcb922d4c922dc4262c58110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XrMotionDataExplorer.MotionDataLoader
-  motionDataCsv: {fileID: 4900000, guid: 82a82935b2d9679428216d48d777db38, type: 3}
+  motionDataCsv: {fileID: 4900000, guid: b2b38ec05d76f564a85dc1512cff1a2c, type: 3}
 --- !u!4 &1001933941
 Transform:
   m_ObjectHideFlags: 0
@@ -759,7 +759,7 @@ GameObject:
   - component: {fileID: 1188449528}
   - component: {fileID: 1188449527}
   - component: {fileID: 1188449526}
-  - component: {fileID: 1188449525}
+  - component: {fileID: 1188449530}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -767,21 +767,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1188449525
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1188449524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3e5e21ffaee0e444a1f0cbcb660e5e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: XrMotionDataExplorer::XrMotionDataExplorer.Visualization.TrackedObjectVisualizer
-  dataLoader: {fileID: 1001933940}
-  playbackController: {fileID: 1001933942}
-  objectId: sun
 --- !u!135 &1188449526
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -875,6 +860,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188449530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188449524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 458e8b505fb87444fa247a6c7379076f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: XrMotionDataExplorer::XrMotionDataExplorer.Controllers.TrackedObjectController
+  dataLoader: {fileID: 1001933940}
+  playbackController: {fileID: 1001933942}
+  objectId: sun
 --- !u!1 &1978626707
 GameObject:
   m_ObjectHideFlags: 0
@@ -887,7 +887,7 @@ GameObject:
   - component: {fileID: 1978626711}
   - component: {fileID: 1978626710}
   - component: {fileID: 1978626709}
-  - component: {fileID: 1978626708}
+  - component: {fileID: 1978626713}
   m_Layer: 0
   m_Name: Sphere (4)
   m_TagString: Untagged
@@ -895,21 +895,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1978626708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1978626707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3e5e21ffaee0e444a1f0cbcb660e5e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: XrMotionDataExplorer::XrMotionDataExplorer.Visualization.TrackedObjectVisualizer
-  dataLoader: {fileID: 1001933940}
-  playbackController: {fileID: 1001933942}
-  objectId: mars
 --- !u!135 &1978626709
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1003,6 +988,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1978626713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978626707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 458e8b505fb87444fa247a6c7379076f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: XrMotionDataExplorer::XrMotionDataExplorer.Controllers.TrackedObjectController
+  dataLoader: {fileID: 1001933940}
+  playbackController: {fileID: 1001933942}
+  objectId: mars
 --- !u!1 &1995088413
 GameObject:
   m_ObjectHideFlags: 0
@@ -1015,7 +1015,7 @@ GameObject:
   - component: {fileID: 1995088417}
   - component: {fileID: 1995088416}
   - component: {fileID: 1995088415}
-  - component: {fileID: 1995088414}
+  - component: {fileID: 1995088419}
   m_Layer: 0
   m_Name: Sphere (2)
   m_TagString: Untagged
@@ -1023,21 +1023,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1995088414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1995088413}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3e5e21ffaee0e444a1f0cbcb660e5e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: XrMotionDataExplorer::XrMotionDataExplorer.Visualization.TrackedObjectVisualizer
-  dataLoader: {fileID: 1001933940}
-  playbackController: {fileID: 1001933942}
-  objectId: venus
 --- !u!135 &1995088415
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1131,6 +1116,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1995088419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995088413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 458e8b505fb87444fa247a6c7379076f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: XrMotionDataExplorer::XrMotionDataExplorer.Controllers.TrackedObjectController
+  dataLoader: {fileID: 1001933940}
+  playbackController: {fileID: 1001933942}
+  objectId: venus
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

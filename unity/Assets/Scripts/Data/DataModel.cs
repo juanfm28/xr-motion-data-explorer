@@ -1,3 +1,4 @@
+using UnityEngine;
 namespace XrMotionDataExplorer.Data
 {
     public class SpatialSample
@@ -16,5 +17,7 @@ namespace XrMotionDataExplorer.Data
             this.Y = y;
             this.Z = z;
         }
+
+        public Vector3 Position => new Vector3(X, Y, Z);
     }
 }
